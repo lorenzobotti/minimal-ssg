@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+   <!--<link rel="stylesheet" href="new.css">-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+   <style>
+      a.homepage-link {
+	color: var(--nc-tx-1);
+	text-decoration: none;
+}
+
+a.homepage-link:hover {
+	color: var(--nc-tx-2);
+	text-decoration: underline;
+}
+
+   </style>
+   <title>Lorenzo's blog</title>
+</head>
+<body>
+   <header>
+      <h1>Lorenzo's blog</h1>
+   </header>
+   {{ range $index, $element := .}}
+      {{/*fully print out the first 2 posts, then just show the link*/}}
+      {{if lt $index 5}}
+         <h1><a class="homepage-link" href="{{ .File }}">{{ $element.Title }}</a></h1>
+         <p>{{ $element.PublicationDate }}</p>
+         {{ $element.Content }}
+         <hr>
+      {{ else }}
+         <a href="{{ .File }}">{{$element.Title}}</a><br>
+      {{ end }}
+   {{end}}
+</body>
+</html>

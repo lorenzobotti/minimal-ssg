@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+   <!--<link rel="stylesheet" href="new.css">-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+   <style>
+      a.homepage-link {
+	color: var(--nc-tx-1);
+	text-decoration: none;
+}
+
+a.homepage-link:hover {
+	color: var(--nc-tx-2);
+	text-decoration: underline;
+}
+
+   </style>
+   <title>Lorenzo's blog</title>
+</head>
+<body>
+   <header>
+      <h1>Lorenzo's blog</h1>
+   </header>
+   
+      
+      
+         <h1><a class="homepage-link" href="gecs.html">100 gecs?</a></h1>
+         <p>08/08/2020</p>
+         
+
+<p>what about 1 gec and 2 gecs and 3 gecs and 4 gecs and 5 gecs and 6 gecs and 7 gecs and 8 gecs and 9 gecs and 10 gecs and 11 gecs and 12 gecs and 13 gecs and 14 gecs and 15 gecs and 16 gecs and 17 gecs and 18 gecs and 19 gecs and 20 gecs and 21 gecs and 22 gecs and 23 gecs and 24 gecs and 25 gecs and 26 gecs and 27 gecs and 28 gecs and 29 gecs and 30 gecs and 31 gecs and 32 gecs and 33 gecs and 34 gecs and 35 gecs and 36 gecs and 37 gecs and 38 gecs and 39 gecs and 40 gecs and 41 gecs and 42 gecs and 43 gecs and 44 gecs and 45 gecs and 46 gecs and 47 gecs and 48 gecs and 49 gecs and 50 gecs and 51 gecs and 52 gecs and 53 gecs and 54 gecs and 55 gecs and 56 gecs and 57 gecs and 58 gecs and 59 gecs and 60 gecs and 61 gecs and 62 gecs and 63 gecs and 64 gecs and 65 gecs and 66 gecs and 67 gecs and 68 gecs and 69 gecs and 70 gecs and 71 gecs and 72 gecs and 73 gecs and 74 gecs and 75 gecs and 76 gecs and 77 gecs and 78 gecs and 79 gecs and 80 gecs and 81 gecs and 82 gecs and 83 gecs and 84 gecs and 85 gecs and 86 gecs and 87 gecs and 88 gecs and 89 gecs and 90 gecs and 91 gecs and 92 gecs and 93 gecs and 94 gecs and 95 gecs and 96 gecs and 97 gecs and 98 gecs and 99 gecs</p>
+
+<pre>
+package main
+
+import "fmt"
+
+func main(){
+	fmt.Print("what about 1 gec")
+	for i := 2; i < 100; i++ {
+		fmt.Print(" and ", i, " gecs")
+	}
+}
+</pre>
+
+
+         <hr>
+      
+   
+      
+      
+         <h1><a class="homepage-link" href="multiline_code.html">Multiline code support</a></h1>
+         <p>06/08/2020</p>
+         
+
+
+<p>Here's some stuff before the code</p>
+<pre>
+# this is not a title
+inline code block
+**mamma mia marcello**
+</pre>
+<p>other stuff <strong>after</strong> the code with some <code>inline code</code></p>
+
+<p>Just a couple more things to add to the markdown compiler.</p>
+<ul>
+<li><code>=====</code> and <code>------</code> for titles and subtitles</li>
+<li><code>[image alt text][number of image in an index]</code> for images and links</li>
+<li>ignore markdown syntax in inline code</li>
+<li>something is still up with closing lists</li>
+<li>escape characters with a backslash</li>
+</ul>
+<p>I'm thinkng of some modifications I could make to Markdown, like embedding youtube videos and stuff, but what we already have is enough for a simple blog such as this one.</p>
+<p>Maybe in the future I could also move away from <a href="https://newcss.net">new.css</a> and use my own CSS rules. There's no objective need for it, but there's also no objective need for yet another static site generator.</p>
+
+
+         <hr>
+      
+   
+      
+      
+         <h1><a class="homepage-link" href="list_test.html">list itemsub-t tesub-t!</a></h1>
+         <p>03/08/2020</p>
+         
+
+
+<ul>
+<li>list item 1</li>
+<li>list item 2</li>
+<ul>
+<li>sub-list item 1</li>
+</ul>
+<li>list item 3</li>
+<ul>
+<li>sub-list item 1</li>
+<ul>
+<li>sub-sub-list item 1</li>
+<li>sub-sub-list item 2</li>
+</ul>
+<li>sub-list item 3</li>
+<ol>
+<li>numbered list item 1</li>
+<ol>
+<li>numbered sub-list item 1</li>
+<li>numbered sub-list item 2</li>
+<li>numbered sub-list item 3</li>
+</ol>
+<li>numbered list item 2</li>
+<ul>
+<li>i don't even know how deeply nested this is</li>
+</ul>
+</ol>
+<li>sub-list item 4</li>
+<ul>
+<li>sub-sub-list item 1</li>
+</ul>
+</ul>
+<li>list item 4</li>
+</ul>
+<p>paragraph</p>
+
+<ol>
+<li>another list</li>
+<li>this time it's a numbered list</li>
+<ul>
+<li>with an unnumbered sub-list</li>
+<li>second sub-list item</li>
+</ul>
+</ol>
+<p>debug goes brrr</p>
+
+
+
+         <hr>
+      
+   
+      
+      
+         <h1><a class="homepage-link" href="blog_finished.html">First minimum viable product!</a></h1>
+         <p>03/08/2020</p>
+         
+
+
+<p>The homepage is done. The homepage now shows for each post a full preview with the title linking to the actual post itself. This is fine for now, but will get heavy once we start serving more posts. I'm thinking I can just show just the first 5 or so posts as full previews and the rest as just the title with a link to the post, maybe in their own "archive" page, or maybe just in the homepage below the previews.</p>
+
+<h3>What now?</h3>
+<p>Well, I still need to add full markdown support (lists and code blocks) and maybe polish the style a bit, but I think we have a (<strong>very</strong> minimalistic) fully functioning static site generator on our hands. Actually, let's write what I need to do in the form of a list, so when I'm done implementing those this part will actually make sense:</p>
+<ul>
+<li>List and code support for markdown</li>
+<li>Locally stored images support (automatically move them form <code>posts/</code> to <code>output/</code> without any collisions)</li>
+<li>Name collision detection for posts(?)</li>
+<li>Some way to include the date of pubblication in the </li>
+<li>Probably something else that I can't remember right now, I'll add more stuff fo sure</li>
+</ul>
+
+<h3>How am i gonna use this?</h3>
+<p>I think I'm just going to use this as a general mind journal, maybe detailing my personal projects (whether related to computer science or not), but always as if I was writing on an actual blog. Who knows? Maybe I'll actually pubblish this someday. Of course, if I manage to keep writing at an acceptable rate, which we all know I will not.</p>
+
+
+         <hr>
+      
+   
+      
+      
+         <h1><a class="homepage-link" href="second_post.html">Second post</a></h1>
+         <p>02/08/2020</p>
+         
+
+
+<img src="https://justyy.com/wp-content/uploads/2016/01/markdown-syntax-language.png"></img>
+
+<p>I'm working on the home page, and making a list of posts in chronological order for the blog. I'm also thinking of putting five or six of the most recet posts at the bottom of every post. I'm just worried about how to encode the pubblication date inside of the markdown file. Maybe make the first line into a timestamp?</p>
+
+<h3>Todos</h3>
+
+<p>I still have to finish the markdown parser by adding list support and multiline code. Regular expressions are not enough for those because they would need to work on multiple lines at a time. Lists especially are going to be a pain because of indentation. I'll figure something out, but it's probably not going to take too much time.</p>
+<p>I should also probably make the program move locally stored images from the <code>posts/</code> to the <code>output/</code> folder on its own.</p>
+<p>The important part here is the Home Page. Once that's done, I'll basically have a respectable minimum viable product on my hands, and an almost finished one at that: I don't care for all the extra features, this is just an exercise, there's plenty of much better and more polished SSGs out there.</p>
+
+
+         <hr>
+      
+   
+      
+      
+         <a href="test.html">My first blog post!</a><br>
+      
+   
+</body>
+</html>

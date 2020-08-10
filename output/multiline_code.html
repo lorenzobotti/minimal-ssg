@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+   <!--<link rel="stylesheet" href="new.css">-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+   <style>
+      a.homepage-link {
+	color: var(--nc-tx-1);
+	text-decoration: none;
+}
+
+a.homepage-link:hover {
+	color: var(--nc-tx-2);
+	text-decoration: underline;
+}
+
+   </style>
+   <title>Multiline code support</title>
+</head>
+<body>
+   <header>
+      <h1><a class="homepage-link" href="index.html">Lorenzo's Blog</a></h1>
+   </header>
+   <h1>Multiline code support</h1>
+   <p>06/08/2020</p>
+   
+
+
+<p>Here's some stuff before the code</p>
+<pre>
+# this is not a title
+inline code block
+**mamma mia marcello**
+</pre>
+<p>other stuff <strong>after</strong> the code with some <code>inline code</code></p>
+
+<p>Just a couple more things to add to the markdown compiler.</p>
+<ul>
+<li><code>=====</code> and <code>------</code> for titles and subtitles</li>
+<li><code>[image alt text][number of image in an index]</code> for images and links</li>
+<li>ignore markdown syntax in inline code</li>
+<li>something is still up with closing lists</li>
+<li>escape characters with a backslash</li>
+</ul>
+<p>I'm thinkng of some modifications I could make to Markdown, like embedding youtube videos and stuff, but what we already have is enough for a simple blog such as this one.</p>
+<p>Maybe in the future I could also move away from <a href="https://newcss.net">new.css</a> and use my own CSS rules. There's no objective need for it, but there's also no objective need for yet another static site generator.</p>
+
+
+</body>
+</html>

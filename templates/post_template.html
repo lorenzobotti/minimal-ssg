@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+   <!--<link rel="stylesheet" href="new.css">-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+   <style>
+      a.homepage-link {
+	color: var(--nc-tx-1);
+	text-decoration: none;
+}
+
+a.homepage-link:hover {
+	color: var(--nc-tx-2);
+	text-decoration: underline;
+}
+
+   </style>
+   <title>{{.Title}}</title>
+</head>
+<body>
+   <header>
+      <h1><a class="homepage-link" href="index.html">Lorenzo's Blog</a></h1>
+   </header>
+   <h1>{{.Title}}</h1>
+   <p>{{.PublicationDate}}</p>
+   {{.Content}}
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+   <!--<link rel="stylesheet" href="new.css">-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+   <style>
+      a.homepage-link {
+	color: var(--nc-tx-1);
+	text-decoration: none;
+}
+
+a.homepage-link:hover {
+	color: var(--nc-tx-2);
+	text-decoration: underline;
+}
+
+   </style>
+   <title>Second post</title>
+</head>
+<body>
+   <header>
+      <h1><a class="homepage-link" href="index.html">Lorenzo's Blog</a></h1>
+   </header>
+   <h1>Second post</h1>
+   <p>02/08/2020</p>
+   
+
+
+<img src="https://justyy.com/wp-content/uploads/2016/01/markdown-syntax-language.png"></img>
+
+<p>I'm working on the home page, and making a list of posts in chronological order for the blog. I'm also thinking of putting five or six of the most recet posts at the bottom of every post. I'm just worried about how to encode the pubblication date inside of the markdown file. Maybe make the first line into a timestamp?</p>
+
+<h3>Todos</h3>
+
+<p>I still have to finish the markdown parser by adding list support and multiline code. Regular expressions are not enough for those because they would need to work on multiple lines at a time. Lists especially are going to be a pain because of indentation. I'll figure something out, but it's probably not going to take too much time.</p>
+<p>I should also probably make the program move locally stored images from the <code>posts/</code> to the <code>output/</code> folder on its own.</p>
+<p>The important part here is the Home Page. Once that's done, I'll basically have a respectable minimum viable product on my hands, and an almost finished one at that: I don't care for all the extra features, this is just an exercise, there's plenty of much better and more polished SSGs out there.</p>
+
+
+</body>
+</html>
