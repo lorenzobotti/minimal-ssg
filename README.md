@@ -5,8 +5,8 @@ This is a minimal [static site generator](https://en.wikipedia.org/wiki/Web_temp
 ## How to compile
 
 ```
-git clone this-repo
-cd this-repo
+git clone https://github.com/lorenzobotti/minimal-ssg
+cd minimal-ssg
 go build *.go -o ssg
 ```
 
